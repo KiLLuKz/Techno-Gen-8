@@ -1,7 +1,7 @@
 // script.js
 
 // 1. นำ URL ที่ได้จากการ Deploy Google Apps Script มาวางที่นี่
-const scriptURL = 'ใส่_WEB_APP_URL_ของคุณตรงนี้';
+const scriptURL = 'https://script.google.com/macros/s/AKfycbwjIi2i5zvxKpvHafwDS-PRIlIK1F7bWkjGf__YouNBrCPx-rIRiHlKvmSDr587OUPqVA/exec';
 
 const form = document.getElementById('queueForm');
 const status = document.getElementById('status');
