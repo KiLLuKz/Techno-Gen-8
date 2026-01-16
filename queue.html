@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESERVE | BLUMINESCENCE</title>
+    <link rel="stylesheet" href="css/queue.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="bpk.png">
+</head>
+<body>
+    <a href="index.html" class="back-home">← BACK TO HOME</a>
+
+    <div class="neon-sphere"></div>
+    <div class="neon-sphere-2"></div>
+
+    <div class="container">
+        <div class="header-box">
+            <p class="tagline">✦ TECHNO GEN 8 ✦</p>
+            <h2 class="title">QUEUE<span>.SYSTEM</span></h2>
+            <p class="subtitle">PheeMaiLok BokPheeTech | TECHNO GEN 8</p>
+        </div>
+        
+        <form id="queueForm">
+            <div class="input-group">
+                <label>IDENTIFICATION</label>
+                <input type="text" name="name" placeholder="กรอกชื่อ-นามสกุลของคุณ" required>
+            </div>
+
+            <div class="input-group">
+                <label>SELECT MISSION</label>
+                <select name="game" required>
+                    <option value="" disabled selected>-- เลือกกลุ่มเกม --</option>
+                    <option value="Something Stranger">Something Stranger (กลุ่ม 1)</option>
+                    <option value="The Forgotten Library">The Forgotten Library (กลุ่ม 2)</option>
+                    <option value="Project Group 3">Project Group 3 (กลุ่ม 3)</option>
+                    <option value="Protect From Ghost">Protect From Ghost (กลุ่ม 4)</option>
+                    <option value="Project Group 5">Project Group 5 (กลุ่ม 5)</option>
+                </select>
+            </div>
+
+            <button type="submit" id="submitBtn">
+                <span>CONFIRM RESERVATION</span>
+                <div class="btn-glow"></div>
+            </button>
+        </form>
+        
+        <div id="status"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

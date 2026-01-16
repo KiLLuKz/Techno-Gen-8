@@ -3,47 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechGen8 | BPK Queue System</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="bpk.png" sizes="32x32">
+    <title>TECHNO GEN 8 | M.5/8 BPK</title>
+    <link rel="icon" href="bpk.png">
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
 </head>
-<body>
-    <div class="bg-image"></div>
-    <div class="bg-overlay"></div>
-
-    <div class="container">
-        <div class="header-box">
-            <h2 class="title">TechGen<span>8</span></h2>
-            <p class="subtitle">Bang Pakok Open House 2026</p>
+<body class="landing-body">
+    
+    <nav class="navbar">
+        <div class="nav-logo">
+            <img src="bpk.png" alt="BPK Logo" class="logo-img">
+            <span>TECHNO GEN 8</span>
         </div>
-        
-        <form id="queueForm">
-            <div class="input-group">
-                <label><i class="icon">👤</i> ชื่อ-นามสกุล</label>
-                <input type="text" name="name" placeholder="ระบุชื่อของคุณ..." required>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">What is Techno?</a></li>
+            <li><a href="queue.html" class="nav-cta">Join Queue</a></li>
+        </ul>
+    </nav>
+
+    <div class="neon-bg"></div>
+    <div class="neon-bg-2"></div>
+
+    <main class="content-wrapper">
+        <section id="home" class="hero-section glass-container">
+            <header>
+                <p class="team-name">✦ THE FUTURE STARTS HERE ✦</p>
+                <h1 class="main-title">TECHNO GEN 8</h1>
+                <p class="class-info">ห้อง 5/8 แผนการเรียนเทคโนโลยี รุ่นที่ 8</p>
+            </header>
+
+            <section class="hero-content">
+                <p class="description">
+                    "มากกว่าการเรียนคอมพิวเตอร์ คือการสร้างสรรค์นวัตกรรม" <br>
+                    พวกเราคือกลุ่มคนรุ่นใหม่ที่หลงใหลในเทคโนโลยี
+                </p>
+                <div class="cta-wrapper">
+                    <a href="#about" class="scroll-btn">Explore More</a>
+                </div>
+            </section>
+        </section>
+
+        <section id="about" class="about-section glass-container">
+            <h2 class="section-title">What is Techno?</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <h3>Coding</h3>
+                    <p>พัฒนาทักษะการเขียนโปรแกรม ตั้งแต่พื้นฐาน</p>
+                </div>
+                <div class="about-card">
+                    <h3>Innovation</h3>
+                    <p>สร้างสรรค์โปรเจกต์ใหม่ๆ ที่ตอบโจทย์การใช้งานจริงในยุคดิจิทัล</p>
+                </div>
+                <div class="about-card">
+                    <h3>Creative</h3>
+                    <p>ผสมผสานศิลปะและเทคโนโลยีเข้าด้วยกันอย่างลงตัว</p>
+                </div>
             </div>
+        </section>
 
-            <div class="input-group">
-                <label><i class="icon">🎮</i> เลือกเกมที่ต้องการท้าทาย</label>
-                <select name="game" required>
-                    <option value="" disabled selected>-- เลือกกลุ่มเกม --</option>
-                    <option value="Something Stranger">Something Stranger (กลุ่ม 1)</option>
-                    <option value="The Forgotten Library">The Forgotten Library (กลุ่ม 2)</option>
-                    <option value="Project Group 3">Project Group 3 (กลุ่ม 3)</option>
-                    <option value="Protect From Ghost">Protect From Ghost (กลุ่ม 4)</option>
-                    <option value="Project Group 5">Project Group 5 (กลุ่ม 5)</option>
-                </select>
-            </div>
+        <footer class="main-footer">
+            <p>© 2026 M.5/8 TECHNO - Bangpakok Wittayakom School</p>
+        </footer>
+    </main>
 
-            <button type="submit" id="submitBtn">
-                <span>RESERVE QUEUE</span>
-            </button>
-        </form>
-        
-        <div id="status"></div>
-    </div>
-
-    <script src="script.js"></script>
 </body>
 </html>
